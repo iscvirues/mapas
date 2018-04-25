@@ -1,0 +1,686 @@
+
+<html>
+
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics_debug.js','ga');
+
+ga('create', 'UA-21793848-2', 'auto');
+ga('send', 'pageview');
+
+
+
+
+</script>
+<!-- End Google Analytics -->
+
+
+
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+    <style type="text/css">
+        /* Custom Font */
+
+        * {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            padding: 0px;
+            border: none;
+            line-height: normal;
+            outline: none;
+            list-style: none;
+            -webkit-text-size-adjust: none;
+            -ms-text-size-adjust: none;
+        }
+
+        table {
+            border-collapse: collapse !important;
+            padding: 0px !important;
+            border-bottom-width: 0px !important;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        table td {
+            border-collapse: collapse;
+            text-decoration: none;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: #FFFFFF;
+            font-family: Avenir;
+        }
+        #mail-twitter{
+            background: url(https://s3.amazonaws.com/axtel.mx/twitter.png) no-repeat;
+            color:transparent;
+            width:50px;
+            height:40px;
+        }
+        #mail-facebook{
+            background: url(https://s3.amazonaws.com/axtel.mx/facebook.png) no-repeat;
+            color:transparent;
+            width:50px;
+            height:40px;
+        }
+        #mail-youtube{
+           background: url(https://s3.amazonaws.com/axtel.mx/youtube.png) no-repeat;
+            color:transparent;
+            width:50px;
+            height:40px; 
+        }
+        #mail-main-message-container{
+            background: #e8e8e8;
+        }
+         .mail-family{
+            font-family: Avenir;
+            text-transform: uppercase;
+        }
+        .mail-title {
+            text-align: center;
+            margin: 0px;
+            padding: 25px;
+            padding-bottom: 5px;
+            font-size: 28px;
+            font-weight: bold;
+            color: #363535;
+        }
+
+        .mail-item-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            font-size: 18px;
+            color: #3a3a3a;
+            text-transform: uppercase;
+        }
+
+        .mail-cta {
+            background: #ededed;
+            width: 120px;
+            padding: 15px;
+            color: #000;
+            text-decoration: none;
+            border-bottom: 2px solid #ff5353;
+            text-align: center;
+            transition: .2s ease-in;
+        }
+
+        .mail-cta a{
+              color: #000;
+            text-decoration: none;
+        }
+        .mail-cta a:hover{
+              color: #fff;
+            text-decoration: none;
+        }
+        .mail-cta:hover > a {
+            color: #fff;
+        }
+        .mail-cta:hover{
+            border-bottom: 5px solid #cc0606;
+            background: #3a3a3a;
+            color:#fff;
+        }
+        .mail-break {
+            padding-bottom: 15px;
+        }
+
+        .mail-legales{
+            font-family: 'Avenir';
+            font-size: 12px;
+            padding-top: 15px;
+        }
+        .mail-disclaimer-title {
+            line-height: 24px;
+            color: #363636;
+            font-size: 20px;
+        }
+        .mail-img-logo{
+            max-height: 50px;
+        }
+
+        .mail-link{
+            font-size: 24px;
+            background: #fff;
+            border-radius: 10px;
+            
+            padding: 15px;
+            transition: all .1s ease-in-out;
+        }
+        
+        .mail-link:hover{
+            border:0px solid #000;
+            transform: scale(1.3);
+        }
+        .redes {
+            float: right;
+        }
+
+        .ExternalClass * {
+            line-height: 100%;
+        }
+
+        .ballon_img,
+        .servicio_img,
+        .soporte_img,
+        .info_img {
+            width: 100px;
+            cursor: pointer;
+        }
+
+        .mail-content {
+            font-family: 'Avenir';
+            text-transform: uppercase;
+            color: #3a3a3a;
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+
+        .container_labels {
+            padding: 0px 0px 0px 0px;
+            font-family: 'Avenir', Helvetica, Arial, sans-serif;
+            font-size: 18px;
+            color: #3a3a3a;
+            width: 90px;
+            padding-left: 0;
+            text-transform: capitalize;
+            padding-bottom: 10px;
+        }
+
+        .container_links {
+            font-family: Avenir;
+            font-size: 16px;
+            color: #ffffff;
+            text-decoration: underline;
+            line-height: 30px;
+        }
+
+        .search_container {
+            border-radius: 25px;
+            margin: 15px auto;
+            background: #ffffff;
+            transition: .2s ease;
+        }   
+        .search_container:hover {
+          transform: scale(1.1);
+        }
+
+        .ballon_container {
+            border-radius: 25px;
+            margin: 15px auto;
+            background: #ffffff;
+            transition: .2s ease;
+        } 
+        .ballon_container:hover {
+           transform: scale(1.1);
+        }
+
+        .search_container:hover, .ballon_container:hover{
+         /*   border-left: 1px solid #3a3a3a;
+            border-right: 1px solid #3a3a3a;*/
+        }
+        /* Responsive */
+
+        @media only screen and (max-width:600px) {
+
+            /* Tables
+	parameters: width, alignment, padding */
+            table {
+                width: 100%;
+            }
+            table[class=scale] {
+                width: 100%!important;
+            }
+
+            /* Td */
+            td[class=scale-left] {
+                width: 100%!important;
+                text-align: left!important;
+            }
+            td[class=scale-left-bottom] {
+                width: 100%!important;
+                text-align: left!important;
+                padding-bottom: 24px!important;
+            }
+            td[class=scale-left-top] {
+                width: 100%!important;
+                text-align: left!important;
+                padding-top: 24px!important;
+            }
+            td[class=scale-left-all] {
+                width: 100%!important;
+                text-align: left!important;
+                padding-top: 24px!important;
+                padding-bottom: 24px!important;
+            }
+            td[class=scale-center] {
+                width: 100%!important;
+                text-align: center!important;
+            }
+            td[class=scale-center-both] {
+                /* width: 100%!important;*/
+                text-align: center!important;
+                padding-left: 20px!important;
+                padding-right: 20px!important;
+            }
+            td[class=scale-center-bottom] {
+                width: 100%!important;
+                text-align: center!important;
+                padding-bottom: 24px!important;
+            }
+            td[class=scale-center-top] {
+                width: 100%!important;
+                text-align: center!important;
+                padding-top: 24px!important;
+            }
+            td[class=scale-center-all] {
+                width: 100%!important;
+                text-align: center!important;
+                padding-top: 24px!important;
+                padding-bottom: 24px!important;
+                padding-left: 20px!important;
+                padding-right: 20px!important;
+            }
+            td[class=scale-right] {
+                width: 100%!important;
+                text-align: right!important;
+            }
+            td[class=scale-right-bottom] {
+                width: 100%!important;
+                text-align: right!important;
+                padding-bottom: 24px!important;
+            }
+            td[class=scale-right-top] {
+                width: 100%!important;
+                text-align: right!important;
+                padding-top: 24px!important;
+            }
+            td[class=scale-right-all] {
+                width: 100%!important;
+                text-align: right!important;
+                padding-top: 24px!important;
+                padding-bottom: 24px!important;
+            }
+
+            td[class=scale-center-bottom-both] {
+                width: 100%!important;
+                text-align: center!important;
+                padding-bottom: 24px!important;
+                padding-left: 20px!important;
+                padding-right: 20px!important;
+            }
+            td[class=scale-center-top-both] {
+                width: 100%!important;
+                text-align: center!important;
+                padding-top: 24px!important;
+                padding-left: 20px!important;
+                padding-right: 20px!important;
+            }
+            td[class=reset] {
+                height: 0px!important;
+            }
+            td[class=scale-center-topextra] {
+                width: 100%!important;
+                text-align: center!important;
+                padding-top: 84px!important;
+            }
+
+            img[class="reset"] {
+                display: inline!important;
+            }
+            a[class=pad-top] {
+                padding-top: 50px;
+                display: block;
+            }
+            span[class=mobile-hidden] {
+                display: none;
+            }
+            .ballon_img,
+            .servicio_img,
+            .soporte_img,
+            .info_img {
+                width: 20%;
+            }
+            .search_container,
+            .ballon_container {
+                border-radius: 0px;
+            }
+            .container_labels,
+            .mail-item-title,
+            .mail-legales,
+            .mail-break {
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+            .mail-cta{
+                margin-left: 25px;
+                margin-right: 25px;
+            }
+
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#FFFFFF" class="scale">
+        <tr><td height="20"></td></tr>
+        <tr><td valign="top">
+            <table width="600" border="0" cellspacing="0" cellpadding="0" align="center" class="scale mail-content">
+                <tr>
+                    <td height="20" class="scale-center">
+                        <a href="#">
+                            <img src="https://s3.amazonaws.com/axtel.mx/logo.png" valign="middle" class="mail-img-logo">
+                        </a>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td height="20" class="scale-center">
+                        <a class="mail-family"> Servicio y Ayuda</a>
+                    </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td height="10">
+            </td>
+        </tr>
+    </table>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" id="mail-main-message-container">
+        <tr>
+            <td data-padding="">
+                <table width="600" border="0" cellspacing="0" cellpadding="0" align="center" class="scale">
+                    <tr>
+                        <td class="mail-title">Estimado Cliente AXTEL</td>
+                    </tr>
+                    <tr>
+                        <td height="84" class="scale-center-bottom mail-break" align="center">
+                            <p>Para conocer tu recibo Axtel da clic en la siguiente liga donde se explica a detalle todas las secciones de tu recibo.
+<br>
+</p><br>
+                            
+                            <br>
+                        </td>
+                    </tr>
+                    <tr><td align="center" class="mail-link"><a href="">estaesunaprueba.com.mx</a></td></tr>
+                     
+                   
+                </table>
+
+            </td>
+        </tr>
+        <tr>
+            <td height="24">
+            </td>
+        </tr>
+    </table>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#e8e8e8">
+        <tr>
+            <td data-padding="">
+                <table width="600" border="0" cellspacing="0" cellpadding="0" align="center" class="scale search_container" bgcolor="#fff">
+                    <tr>
+                        <td height="10">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <a href="https://axtelmx.custhelp.com/"  onClick="ga('send', 'event', 'email', 'clic', 'rn');" target="_blank" >Servicio y Ayuda</a>
+
+
+                            <table width="200" border="0" cellspacing="0" cellpadding="0" align="left" class="scale">
+                                <tr>
+                                    <td height="15"></td>
+                                </tr>
+                                <tr><td width="50"></td>
+                                    <td align="center" class="scale-center-bottom">
+                                        <a alt="Servicio y Ayuda" title="Servicio y Ayuda" href="https://axtelmx.custhelp.com/" target="_blank">
+                
+                                            <svg x="0px" y="0px" class="soporte_img"
+                                                 viewBox="0 0 71 60" style="enable-background:new 0 0 61 60;" xml:space="preserve">
+                                            <style type="text/css">
+                                                .st0{fill:none;stroke:#3a3a3a;stroke-width:4;}
+                                                .st1{fill:none;stroke:#3a3a3a;stroke-width:3;}
+                                                .st2{fill:none;stroke:#3a3a3a;stroke-width:3;stroke-linecap:square;}
+                                            </style>
+                                            <g>
+                                                <g transform="translate(2.000000, 2.000000)">
+                                                    <circle class="st0" cx="22" cy="22" r="22"/>
+                                                    <path class="st1" d="M40.9,34.5l-5.7,5.7l14.9,14.9c1.6,1.6,4.1,1.6,5.7,0c1.6-1.6,1.6-4.1,0-5.7L40.9,34.5z"/>
+                                                    <path class="st2" d="M40.7,45l5.3-5.1"/>
+                                                </g>
+                                            </g>
+                                            </svg>
+
+                                        
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table width="340" border="0" cellspacing="0" cellpadding="0" align="center" class="scale">
+                                <tr>
+                                    <td height="15" class="mail-item-title">Resuelve tus dudas </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="container_labels scale-center-both">
+                                       de manera fácil y práctica en nuestro Centro de Ayuda</td>
+
+                                </tr>
+                                 <tr align="left">
+                        <td><div class="mail-cta"><a href="https://axtelmx.custhelp.com/"  onClick="ga('send', 'event', 'email', 'clic', 'RN');" target="_blank" >Servicio y Ayuda</a>
+
+
+
+                        </div></td>
+                    </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="10">
+
+                        </td>
+                    </tr>
+
+                </table>
+                <table width="600" border="0" cellspacing="0" cellpadding="0" align="center" class="scale ballon_container" bgcolor="#fff">
+                    <tr>
+                        <td height="10">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table width="200" border="0" cellspacing="0" cellpadding="0" align="right" class="scale">
+                                 <tr>
+                                    <td height="25"></td>
+                                </tr>
+                                <tr>
+                                    <td align="center" class="scale-center-bottom">
+                                        <a alt="Chat" title="Chat" href="https://axtelmx.custhelp.com/app/chat/chat_launch" target="_blank">
+                                        
+                                        
+                                        <svg x="0px" y="0px" class="ballon_img"
+                                             viewBox="0 0 70 57" style="enable-background:new 0 0 61 57;" xml:space="preserve">
+                                        <style type="text/css">
+                                            .st4{fill:#ffffff;}
+                                            .st5{fill:none;stroke:#3a3a3a;stroke-width:4;}
+                                        </style>
+                                        <g>
+                                            <g id="balloon" >
+                                                <g transform="translate(44.657490, 37.639932) scale(-1, 1) translate(-44.657490, -37.639932) ">
+                                                    <g>
+                                                        <path class="st4" d="M34.1,19h21.2l0,0C63.4,19,70,25.6,70,33.8l0,0l0,0c0,8.1-6.6,14.8-14.8,14.8H44.6l-10.5,7.8
+                                                            l-1.3-7.8l0,0l0,0c-7.4,0-13.4-6-13.4-13.4v-1.3l0,0C19.3,25.6,25.9,19,34.1,19z"/>
+                                                    </g>
+                                                    <path class="st5" d="M35.5,52.7l8.4-6.2h0.7h10.7c7,0,12.8-5.7,12.8-12.8S62.3,21,55.2,21H34.1c-7,0-12.8,5.7-12.8,12.8v1.3
+                                                        c0,6.3,5.1,11.4,11.4,11.4h1.7L35.5,52.7z"/>
+                                                </g>
+                                                <g>
+                                                    <g>
+                                                        <path class="st4" d="M19.5,0h28l0,0C58.3,0,67,8.7,67,19.5l0,0l0,0C67,30.3,58.3,39,47.5,39H33.4L19.5,49.3L17.7,39
+                                                            l0,0l0,0C7.9,39,0,31.1,0,21.3v-1.8l0,0C0,8.7,8.7,0,19.5,0z"/>
+                                                    </g>
+                                                    <path class="st5" d="M20.9,45.7L32.7,37h14.8C57.2,37,65,29.2,65,19.5S57.2,2,47.5,2h-28C9.8,2,2,9.8,2,19.5v1.8
+                                                        C2,30,9,37,17.7,37h1.7L20.9,45.7z"/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                        </svg>
+
+                                        
+                                        </a>
+                                    </td>
+                                    <td width="50"></td>
+                                </tr>
+                            </table>
+                            <table width="340" border="0" cellspacing="0" cellpadding="0" align="center" class="scale">
+                                <tr>
+                                    <td height="15"></td>
+                                </tr>
+                                <tr>
+                                    <td height="15" class="mail-item-title" align="right">Si lo prefieres </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="container_labels scale-center-both"  align="right">
+                                        puedes chatear con uno de nuestros ejecutivos </td>
+
+                                </tr>
+                                 <tr align="right">
+                        <td><div class="mail-cta" ><a href="https://axtelmx.custhelp.com/app/chat/chat_launch" target="_blank">Chat</a></div></td>
+                    </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="10">
+
+                        </td>
+                    </tr>
+                </table>
+
+            </td>
+        </tr>
+        <tr>
+            <td height="14">
+            </td>
+        </tr>
+    </table>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" class="scale" data-module="disclaimer" bgcolor="#e8e8e8">
+
+        <tr>
+            <td valign="top">
+                <table width="600" border="0" cellspacing="0" cellpadding="0" align="center" class="scale mail-disclaimer">
+                    <tr><td height="25"></td></tr>
+                    <tr>
+                        <td height="84" class="scale-center-bottom mail-break" align="center">
+            
+                            <p>
+                                Gracias por preferir los Servicios AXTEL.<br>Por favor no respondas este mensaje. Para cualquier duda o comentario puedes contactarnos por chat en <a href="www.axtel.mx">www.axtel.mx</a> o escribir a <a href="mailto:servicioaclientes@axtel.com.mx">servicioaclientes@axtel.com.mx</a> </p><br>
+                        </td>
+                    </tr>
+                    
+                   
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td height="10">
+            </td>
+        </tr>
+    </table>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" class="scale" data-module="disclaimer" bgcolor="#fcfcfc">
+
+        <tr>
+            <td valign="top">
+                <table width="600" border="0" cellspacing="0" cellpadding="0" align="center" class="scale mail-disclaimer">
+                    
+                    <tr>
+                        <td height="20"></td>
+                    </tr>
+                    <tr>
+                        <td height="10" align="center" class="scale-center mail-disclaimer-title">
+                            Axtel Corporativo
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="40" style="line-height: 24px; color: #b4b4b4;" align="center" class="scale-center mail-legales">
+                            El contenido del presente correo electrónico es de carácter confidencial, privado y propiedad de AXTEL, S.A.B. de C.V., por lo que en caso de haber recibido el presente por error o de no ser el destinatario del mismo, por favor hágalo saber al remitente, e igualmente elimine y no almacene en forma alguna la información aquí contenida. Así mismo, el contenido del presente correo no genera obligación alguna a cargo de AXTEL, S.A.B. de C.V. o de cualquiera de sus subsidiarias o del remitente. Queda estrictamente prohibida la revisión, uso, distribución o notificación del presente correo por personas distintas al destinatario. The content of this email is confidential, private and proprietary AXTEL, S.A.B. de C.V., so if you have received this by error, or if you are not the addressee, please let it know to the sender, and also remove and do not store in any way the information contained herein. Also, the content of this email does not create any obligation by AXTEL, S.A.B. de C.V., or any of its subsidiaries or sender. Any review, use, distribution or disclosure by others is strictly prohibited.</td>
+                    </tr>
+                    <tr>
+                        <td height="30">
+                        </td>
+                    </tr>
+                   
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td height="50">
+            </td>
+        </tr>
+    </table>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#FFFFFF" class="scale">
+        <tr>
+            <td height="50">
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">
+                <table width="600" border="0" cellspacing="0" cellpadding="0" align="center" style="font-family: 'Avenir'; text-transform: uppercase; color: #3a3a3a; font-size: 12px; letter-spacing: 1px;" class="scale">
+                    <tr>
+                        <td height="20" class="scale-center" valign="bottom">
+                            <a target="_blank" href="http://axtel.mx/informacion/informacion-legal" style="color: #3a3a3a; text-decoration: none;">
+Legales</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a target="_blank" href="http://axtel.mx/informacion/aviso-de-privacidad" style="color: #3a3a3a; text-decoration: none;">
+Privacidad</a>
+                        </td>
+                        <td align="">
+                        <ul class="header-redes">
+                            <li class="redes">
+                                <a href="https://twitter.com/axtel?lang=es" tabindex="0" target="_blank">
+                                    <div id="mail-twitter" aria-label="Twitter" alt="Twitter"></div>
+                                </a>
+                            </li>
+                            <li class="redes">
+                                <a href="https://www.facebook.com/axtel/" tabindex="0" target="_blank">
+                                    <div id="mail-facebook" aria-label="Facebook" alt="Facebook"></div>
+                                </a>
+                            </li>
+                            <li class="redes">
+                                <a href="https://www.youtube.com/user/AxtelMx" tabindex="0" target="_blank">
+                                    <div id="mail-youtube" aria-label="Youtube" alt="Youtube"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td height="50">
+            </td>
+        </tr>
+    </table>
+
+    <img src="http://www.google-analytics.com/collect?v=1&tid=UA-21793848-2&cid=21793848&t=event&ec=email&ea=open2&el=RECEPTOR&cs=newsletter&cm=email&cn=rightnow" style="visibility: hidden;" />
+
+</body>
+
+</html>
