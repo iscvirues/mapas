@@ -130,7 +130,8 @@
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           zoom: 12,
-          center: {lat: 31.690364, lng: -106.424548}
+          center: {lat: 31.690364, lng: -106.424548},
+          mapTypeControl: false
         });
         var kmlLayer = new google.maps.KmlLayer({
           url: 'http://iscvirues.github.io/mapas/kml/ciudadjuarez.kml',

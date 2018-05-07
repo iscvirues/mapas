@@ -130,7 +130,8 @@
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           zoom: 12,
-          center: {lat: 20.659699, lng: -103.349609}
+          center: {lat: 20.659699, lng: -103.349609},
+          mapTypeControl: false
         });
         var kmlLayer = new google.maps.KmlLayer({
           url: 'http://iscvirues.github.io/mapas/kml/guadalajara.kml',

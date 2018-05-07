@@ -130,12 +130,14 @@
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           zoom: 12,
-          center: {lat: 25.686614, lng: -100.316113}
+          center: {lat: 25.686614, lng: -100.316113},
+           mapTypeControl: false
         });
         var kmlLayer = new google.maps.KmlLayer({
           url: 'http://iscvirues.github.io/mapas/kml/monterrey.kml',
           map: map,
-          preserveViewport:true
+          preserveViewport:true,
+
         });
 
 

@@ -130,7 +130,8 @@
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           zoom: 12,
-          center: {lat: 20.588793, lng: -100.389888}
+          center: {lat: 20.588793, lng: -100.389888},
+          mapTypeControl: false
         });
         var kmlLayer = new google.maps.KmlLayer({
           url: 'http://iscvirues.github.io/mapas/kml/queretaro.kml',

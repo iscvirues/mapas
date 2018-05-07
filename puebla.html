@@ -130,7 +130,8 @@
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           zoom: 12,
-          center: {lat: 19.041297, lng: -98.2062}
+          center: {lat: 19.041297, lng: -98.2062},
+          mapTypeControl: false
         });
         var kmlLayer = new google.maps.KmlLayer({
           url: 'http://iscvirues.github.io/mapas/kml/puebla.kml',

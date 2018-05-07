@@ -130,7 +130,8 @@
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           zoom: 12,
-          center: {lat: 22.15647, lng: -100.985541}
+          center: {lat: 22.15647, lng: -100.985541},
+          mapTypeControl: false
         });
         var kmlLayer = new google.maps.KmlLayer({
           url: 'http://iscvirues.github.io/mapas/kml/sanluispotosi.kml',
